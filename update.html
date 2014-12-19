@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>御坂网络树洞</title>
+
+<script src="http://libs.baidu.com/jquery/2.0.3/jquery.min.js"></script>
+
+<!-- CSS -->
+<style>
+    body * {
+        font-family:"Consolas","Microsoft Yahei", Arial, sans-serif;
+    }
+    body {
+    background: white;
+    margin: 0;
+    padding: 0;
+    }
+    a{
+        color:#000;
+    }
+    .container {
+    opacity: 0;
+    margin-top: 0px;
+    width: 600px;
+    margin: 0 auto 0px;
+    /*
+    margin-top: 30px;
+    */
+    margin-bottom: 30px;
+    padding: 4px 10px;
+    border: 1px solid #CCCCCC;
+    overflow: visible;  border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 1px 1px #CCC;
+    }
+    .container>.title {
+    color: #8C8C8C;
+    font-weight: bold;
+    background: #FFF;
+    padding: 15px 15px;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 4px 4px 4px 4px;
+    margin-top: 10px;
+    }
+    .title2 {
+      color: #000;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .text_content{
+      color: #8C8C8C;
+      font-size: 12px;
+      text-align: center;
+      margin-bottom: 15px;
+      line-height: 25px;
+    }
+</style>
+</head>
+<body>
+
+<!-- HTML -->
+<div class="container">
+  <div class="title">御坂网络树洞<br></div>
+  <div class="title2">更新日志<br></div>
+  <div class="text_content">
+
+当前版本：v0.3.0 Beta
+<br>
+===============
+<br>
+v0.3.0 Beta(2014-12-19)
+<br>
+1. 优化命名
+<br>
+2. 开源程序代码
+<br>
+===============
+<br>
+v0.2.9(2014-12-16)
+<br>
+1. 优化载入时间
+<br>
+===============
+<br>
+v0.2.8(2014-12-13)
+<br>
+1. 优化前端显示 
+<br>
+2. 支持御坂御坂口癖特性
+<br>
+===============
+<br>
+v0.2.7(2014-12-13)
+<br>
+1. 升级jQuery库版本到2.0.3
+<br>
+2. 使用压缩版jQuery库以优化访问速度
+<br>
+3. 使用百度CDN对公共库访问速度进行优化
+<br>
+===============
+<br>
+v0.2.6(2014-12-12)
+<br>
+1. 优化与Firefox浏览器以及IE浏览器的兼容性
+<br>
+===============
+<br>
+v0.2.5(2014-12-10)
+<br>
+1. 优化部分显示的兼容性
+<br>
+2. 优化载入效果
+<br>
+3. 增加载入动画
+<br>
+===============
+<br>
+v0.2.4(2014-12-09)
+<br>
+1. 调整显示细节
+<br>
+===============
+<br>
+v0.2.3(2014-12-08)
+<br>
+1. 识别当没有勾选任何平台时不能发送
+<br>
+2. 识别当没有输入任何文字时不能发送
+<br>
+3. 修正非Chrome浏览器可能存在的 1px 偏移情况
+<br>
+===============
+<br>
+v0.2.2(2014-12-08)
+<br>
+1. 支持单选只发送微博或者人人
+<br>
+===============
+<br>
+v0.2.1(2014-12-08)
+<br>
+1. 支持同步发送到微博
+<br>
+===============
+<br>
+v0.2.0(2014-12-08)
+<br>
+1. 优化页脚
+<br>
+2. 查询更新日志
+<br>
+===============
+<br>
+v0.1.9(2014-12-08)
+<br>
+1. 调整按钮显示效果
+<br>
+2. 重新编写跳转页面
+<br>
+===============
+<br>
+v0.1.8(2014-12-08)
+<br>
+1. 调整了配色
+<br>
+2. 发送前即可知道树洞的编号
+<br>
+3. 调整验证码弹出位置
+<br>
+4. 调整容器大小
+<br>
+===============
+<br>
+v0.1.7(2014-12-08)
+<br>
+1. 重新绘制了前端
+<br>
+2. 发送成功后会自动跳转到公共主页
+<br>
+===============
+<br>
+v0.1.6(2014-12-07)
+<br>
+1. 更换验证码为点触验证码，访问更迅速
+<br>
+===============
+<br>
+v0.1.5(2014-12-06)
+<br>
+1. 更名为御坂网络树洞
+<br>
+2. 修复自动跳转功能
+<br>
+===============
+<br>
+v0.1.4(2014-12-06)
+<br>
+1. 加入reCaptcha验证码系统
+<br>
+===============
+<br>
+v0.1.3(2014-12-06)
+<br>
+1. 修改TAG样式
+<br>
+===============
+<br>
+v0.1.2(2014-12-06)
+<br>
+1. 发送的消息将包含有含编号的TAG
+<br>
+===============
+<br>
+v0.1.1(2014-12-06)
+<br>
+1. 发送完毕后会自动跳转
+<br>
+===============
+<br>
+v0.1.0(2014-12-06)
+<br>
+1. 将发送者调整为公共主页
+<br>
+2. 修复接口调用的问题
+<br>
+3. 修复中文消息的编码问题
+<br>
+===============
+<br>
+v0.0.1(2014-12-05)
+<br>
+1. 第一个版本
+<br>
+  <a href="index.php">返回</a><br>
+  </div>
+
+</div>
+<!-- Javascript -->
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+            $(".container").animate({
+                opacity:'1',
+                marginTop: '30px'
+            },1000);
+
+        });
+    </script>
+
+</body>
+</html>
